@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Agregar Producto - TRAfrs</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar">
+  <div class="sidebar-brand"><svg class="logo" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect rx="6" width="24" height="24" fill="#ffffff" opacity="0.05"/><path d="M6 12l4-4 4 4 4-4" stroke="#fff" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>TRAfrs</span></div>
+  <nav class="sidebar-nav"><a href="dashboard.html">Inicio</a><a href="productos.html">Productos</a><a class="active" href="agregar_producto.html">Agregar Producto</a></nav>
+</div>
+
+<div class="main">
+  <header class="main-header"><h1>Agregar Producto</h1></header>
+
+  <div class="card">
+    <form id="add-form" class="form" novalidate>
+      <label>Nombre del producto</label>
+      <input id="nombre" type="text" placeholder="Ej: Recarga móvil" required>
+      <label>Descripción</label>
+      <textarea id="descripcion" placeholder="Descripción breve" required></textarea>
+      <label>Tipo</label>
+      <select id="tipo">
+        <option value="metodo">Método de pago</option>
+        <option value="servicio">Servicio</option>
+        <option value="transaccion">Transacción</option>
+        <option value="comercio">Comercio / Aliado</option>
+      </select>
+      <div class="form-row">
+        <button class="btn" type="submit">Guardar producto</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

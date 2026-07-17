@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Login - TRAfrs</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar small">
+  <div class="brand"><a href="index.html" class="logo-link"><svg class="logo" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><rect rx="6" width="24" height="24" fill="#ffffff" opacity="0.05"/><path d="M6 12l4-4 4 4 4-4" stroke="#fff" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">TRAfrs</span></a></div>
+</header>
+
+<main class="auth-page">
+  <div class="auth-container card animated">
+    <h2>Iniciar sesión</h2>
+    <form id="login-form" novalidate>
+      <label>Email o usuario</label>
+      <input type="text" id="login-user" placeholder="Correo o usuario" required>
+      <label>Contraseña</label>
+      <input type="password" id="login-pass" placeholder="Contraseña" minlength="6" required>
+      <div class="form-row">
+        <button class="btn" type="submit">Entrar</button>
+        <a class="link" href="registro.html">¿No tienes cuenta?</a>
+      </div>
+    </form>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
